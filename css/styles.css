@@ -16,6 +16,21 @@ body {
 
 }
 
+.hero-parallax{
+    /* The image used */
+    background-image: url("../img/sections-bg/hero.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
 /*h1, h2, h3 {*/
 
 /*    margin: 0;*/
@@ -224,18 +239,22 @@ H2  -   color: #4E4E4E; - black
 
 /*hero*/
 
-.hero-wrapper-bg{
-    background-image: url("../img/sections-bg/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*background-size: 50px 50px;*/
-    background-position: center;
-    width: 100%;
-    /*height: 1012px;*/
+/*.hero-wrapper-bg{*/
+/*    background-image: url("../img/sections-bg/hero.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    !*background-size: 50px 50px;*!*/
+/*    background-position: center;*/
+/*    width: 100%;*/
+/*    !*height: 1012px;*!*/
+
+
+/*}*/
+
+.hero{
 
     margin-bottom: 8px;
 }
-
 .hero-wrapper{
 
     display: flex;
@@ -1329,7 +1348,63 @@ H2  -   color: #4E4E4E; - black
     margin-bottom: 38px;
 }
 
+.client-feedback-first-arrovs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    top: 605px;
+    left: 323px;
+}
+
+.client-feedback-second-arrovs{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    top: 605px;
+    left: 805px;
+
+}
+
+.client-feedback-programmers-arrov{
+
+    position: absolute;
+    top: 9px;
+    left: 11px;
+}
+.client-feedback-programmers-arrov2{
+
+    position: absolute;
+    top: 9px;
+    left: 12px;
+
+    opacity: 0.6;
+}
+
+.client-feedback-first-arrovs:hover .client-feedback-programmers-rombik1,
+.client-feedback-second-arrovs:hover .client-feedback-programmers-rombik1{
+
+    background: #18CFAB;
+}
+
+.client-feedback-first-arrovs:hover .client-feedback-programmers-arrov,
+.client-feedback-second-arrovs:hover .client-feedback-programmers-arrov2{
+
+    filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(159%) hue-rotate(308deg) brightness(118%) contrast(100%);
+}
+
+.client-feedback-second-arrovs:hover .client-feedback-programmers-arrov2{
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(159%) hue-rotate(308deg) brightness(118%) contrast(100%);
+}
+
+
 .client-feedback-programmers{
+    position: relative;
     display: flex;
     align-items: center;
 
@@ -1337,12 +1412,66 @@ H2  -   color: #4E4E4E; - black
 
 }
 
+.client-feedback-programmers-item{
+    position: relative;
+}
 .client-feedback-programmers-item:not(:last-child){
 
     margin-right: 30px;
 }
 
+.client-feedback-programmers-active{
+    position: relative;
+
+    top: -15px;
+}
+
+
+/*.client-feedback-programmers::before{*/
+
+/*    display: block;*/
+/*    position: absolute;*/
+/*    content: "";*/
+
+/*    background-image: url("../img/svg/client/rombik1.svg");*/
+/*    background-repeat: no-repeat;*/
+
+/*    !*background-position: center;*!*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+
+/*    top: 23px;*/
+/*    left: -60px;*/
+
+/*}*/
+
+/*.client-feedback-programmers::after{*/
+
+/*    display: block;*/
+/*    position: absolute;*/
+/*    content: "";*/
+
+/*    background-image: url("../img/svg/client/rombik2.svg");*/
+/*    background-repeat: no-repeat;*/
+
+/*    !*background-position: center;*!*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+
+/*    top: 22px;*/
+/*    right: -425px;*/
+
+/*}*/
+
+
+
+
 /* Gallery */
+
+
+/*FOOTER*/
+
+/* Copyright */
 .copyright-bg{
 
     height: 121px;
@@ -1352,11 +1481,6 @@ H2  -   color: #4E4E4E; - black
     padding-top: 48px;
     padding-bottom: 47px;
 }
-
-
-/*FOOTER*/
-
-/* Copyright */
 
 .footer-list{
     display: flex;
