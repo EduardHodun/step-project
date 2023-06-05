@@ -584,6 +584,9 @@ H2  -   color: #4E4E4E; - black
     color: #1C2A33;
 
 }
+.service-list-description-unvisible{
+    display: none;
+}
 
 .service-list-description img{
     margin-right: 13px;
