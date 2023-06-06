@@ -590,6 +590,11 @@ H2  -   color: #4E4E4E; - black
 
 .service-list-description img{
     margin-right: 13px;
+
+    height: 139px;
+    width: 192px;
+    
+    border-radius: 0px;
 }
 
 .service-list-description-text{
